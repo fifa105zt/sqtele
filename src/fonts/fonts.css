@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Comfortaa Light';
+    src: url('subset-Comfortaa-Light.eot');
+    src: url('subset-Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-Comfortaa-Light.woff2') format('woff2'),
+        url('subset-Comfortaa-Light.woff') format('woff'),
+        url('subset-Comfortaa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa Bold';
+    src: url('subset-Comfortaa-Bold.eot');
+    src: url('subset-Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-Comfortaa-Bold.woff2') format('woff2'),
+        url('subset-Comfortaa-Bold.woff') format('woff'),
+        url('subset-Comfortaa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url('subset-Comfortaa-Regular.eot');
+    src: url('subset-Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Comfortaa-Regular.woff2') format('woff2'),
+        url('subset-Comfortaa-Regular.woff') format('woff'),
+        url('subset-Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

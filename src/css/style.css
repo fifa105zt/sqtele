@@ -1,0 +1,392 @@
+.container{
+    width: 90%;
+    height: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.container-small{
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*-----HEADER-----*/
+
+header{
+    min-height: 650px;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    min-height: 650px;
+    background: url("../img/top.png") top;
+    z-index: -2;
+}
+.top-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.7% 3.418%; /* 20px 40px /1170px */
+}
+.social{
+    width: 100%;
+    max-width: 28.43%; /* 310px /1170px */
+}
+.social > a{
+    padding-left: 2.56%; /* 30px /1170px */
+}
+.social > a:last-child{
+    padding-left: 12.82%; /* 150px /1170px */
+    /*padding-left: 150px; !* 150px /1170px *!*/
+    font: 1em "Comfortaa Regular";
+    color: white;
+}
+.nav-wrap{
+    position: absolute;
+    top: 100px;
+    min-height: 50px;
+    width: 100%;
+    background-color: white;
+    font: 1.125em "Comfortaa Regular";
+    border-bottom: 1px solid #a6a6a6;
+}
+.nav-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5% 3.4188%; /* 15px 40px /50px */
+}
+ .menu-element > a{
+    color: black;
+}
+
+.menu-element > a:after {
+    background-color: #311fc2;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.menu-element > a:hover:after,
+.menu-element > a:focus:after {
+    width: 100%;
+}
+.container-small h1{
+    position: absolute;
+    top: 330px;
+    max-width: 550px;
+    font: 2.25em "Comfortaa Bold";
+    color: white;
+}
+.menu .nav-inner .menu-element > a{
+    position: relative;
+}
+
+/*.menu .nav-inner .menu-element .out-menu*/
+
+
+.out{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    max-width: 260px;
+    background-color: #0054ab;
+    color: white;
+    z-index: 1;
+    transition: ease-in-out visibility 1.5s, opacity .7s linear;
+}
+.menu .nav-inner .menu-element .out-menu .out-menu__wrap{
+    display: flex;
+    flex-direction: column;
+}
+.menu .nav-inner .menu-element .out-menu .out-menu__wrap li{
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+.menu .nav-inner .menu-element a:hover + .out,
+.out:hover
+{
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+
+/*-----HEADER-----*/
+
+
+/*-----CONTENT-----*/
+.block-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+.block{
+    max-width: 410px;
+    min-height: 450px;
+    background-color: #00004e;
+}
+.block:hover{
+    outline: 3px solid #01b9c3;
+    outline-offset: -20px;
+}
+.block-inner img{
+    display: block;
+    margin: 0 auto;
+    padding: 45px 0 35px 0;
+}
+.block-inner .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-inner h3{
+    max-width: 290px;
+    font: 30px "Comfortaa Bold";
+    text-align: center;
+}
+.block-inner p{
+    max-width: 280px;
+    padding-top: 15px;
+    font: 24px "Comfortaa Light";
+    text-align: center;
+    line-height: 1.3;
+}
+.text-services{
+    margin-top: 70px;
+    padding-left: 60px;
+}
+.text-services h2{
+    min-height: 100px;
+    margin-bottom: 50px;
+    font: 1.875em "Comfortaa Bold";
+}
+.text-services .services li{
+    padding-bottom: 40px;
+    font: 1.5em "Comfortaa Light";
+    list-style: disc inside;
+}
+.text-services .services li:last-child{
+    margin-bottom: 30px;
+}
+.text-picture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.text-picture p{
+    max-width: 500px;
+    /*height: 430px;*/
+    padding: 0 80px;
+    font: 1.5em 'Comfortaa Light';
+}
+.text-title{
+    margin: 0 auto;
+    padding-bottom: 90px;
+    max-width: 1020px;
+    font: 1.5em 'Comfortaa Light';
+}
+.text-news{
+    max-width: 590px;
+}
+
+.text-news h4{
+    font: 1.875em "Comfortaa Bold";
+    padding-bottom: 45px;
+}
+.text-news p{
+    font: 1.5em 'Comfortaa Light';
+}
+.text-news__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.news-link a {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    font: 1.25em 'Comfortaa Bold';
+    color: black;
+    margin-bottom: 100px;
+}
+/*-----CONTENT-----*/
+
+
+/*-----FOOTER-----*/
+.footer-wrap{
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #032340;
+}
+.foot-container{
+    position: relative;
+    width: 100%;
+    min-height: 290px;
+    max-width: 1085px;
+    margin: 0 auto;
+}
+.foot-container .block-wrap{
+    padding-top: 35px;
+}
+.left-side .address{
+    padding-top: 40px;
+    color: white;
+    font: 1.5em "Comfortaa Light";
+}
+.left-side .address a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+.block-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-nav{
+    display: flex;
+    flex-direction: column;
+}
+.foot-nav a{
+    text-decoration: none;
+    color: white;
+    font: 1.125em "Comfortaa Regular";
+}
+.foot-nav li{
+    padding-bottom: 15px;
+}
+
+/*-----FOOTER-----*/
+@media (max-width: 1199px) {
+    .social {
+        max-width: 35%;
+    }
+}
+
+/* Стили для средних экранов (дисплей максимум 991 пикселей) */
+@media (max-width: 991px) {
+    .social {
+        max-width: 60%;
+    }
+    .container-small h1{
+        top: 170px;
+        font-size: 2em;
+    }
+    .bg{
+        min-height: 360px;
+    }
+    header{
+        min-height: 360px;
+    }
+    .block-wrap{
+        justify-content: center;
+    }
+    .block{
+        margin: 5px;
+    }
+    .text-picture{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-picture p{
+        font: 1.4em 'Comfortaa Light';
+    }
+    .text-news__wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text-news h4{
+        font-size: 1.6em;
+    }
+    .text-news p{
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+    .left-side .address{
+        font-size: 1.3em;
+    }
+}
+
+/* Стили для маленьких экранов (дисплей максимум 767 пикселей) */
+@media (max-width: 767px) {
+    .nav-inner{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5% 0;
+    }
+    .container-small h1{
+        top: 330px;
+        font-size: 1.8em;
+    }
+    .bg{
+        min-height: 480px;
+    }
+    header{
+        min-height: 480px;
+    }
+    .text-services h2{
+        font-size: 1.5em;
+    }
+    .text-services .services li{
+        padding-bottom: 20px;
+        font-size: 1.2em;
+    }
+    .text-picture p{
+        font: 1.2em 'Comfortaa Light';
+    }
+    .text-picture p{
+        font-size: 1.3em;
+    }
+    .text-news h4{
+        font-size: 1.4em;
+    }
+    .text-news p{
+        font-size: 1.3em;
+    }
+    .left-side .address{
+        font-size: 1.1em;
+    }
+}
+
+/* Стили для очень маленьких экранов (дисплей максимум 575 пикселей) */
+@media (max-width: 575px) {
+    .top-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-wrap {
+        top: 150px;
+    }
+    .social {
+        max-width: 90%;
+    }
+    .container-small h1{
+        font-size: 1.5em;
+    }
+    .left-side .address{
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+
+    /*Or foot-nav or block-wrap*/
+    .foot-nav{
+        display: none;
+    }
+    /*.block-wrap{*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+    /*}*/
+}
